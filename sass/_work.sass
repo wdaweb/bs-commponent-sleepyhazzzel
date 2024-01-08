@@ -1,0 +1,42 @@
+#work
+  padding-bottom: 0
+  .title
+    margin-bottom: 1rem
+
+#subtitle
+  position: relative
+  margin-bottom: 3rem
+  text-transform: uppercase
+  color: rgb(140, 140, 140)
+  font: 500 0.65rem 'Mulish', sans-serif
+  letter-spacing: 1px
+  transition: all ease 0.3s
+  &::before,
+  &::after
+    transition: all ease 0.3s
+    color: #000
+    opacity: 0
+
+  &:hover
+    color: #000
+    &::before
+      content: '['
+      transform: translateX(-20px)
+    &::after
+      content: ']'
+      transform: translateX(15px)
+    &::before,
+    &::after
+      display: inline
+      position: absolute
+      top: -1px
+      opacity: 1
+
+#work-img
+  img
+    width: 100%
+
+// 關 .col 間距
+.row
+  *
+    padding: 0
