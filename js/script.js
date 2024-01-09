@@ -11,13 +11,15 @@ var hoverText = [
 
 for (let i = 0; i < 8; i++) {
   $('#work-img').append(`
-  <div class="col">
-    <img src="./img/SingleProjectAjax${i + 1}.jpg">
-    <div class="hover-black">
-      <h6 class="hover-title">${hoverText[i].title}</h6>
-      <p class="hover-tools">${hoverText[i].tools}</p>
+  <a href="#">
+    <div class="col">
+      <img src="./img/SingleProjectAjax${i + 1}.jpg">
+      <div class="hover-black">
+        <h6 class="hover-title">${hoverText[i].title}</h6>
+        <p class="hover-tools">${hoverText[i].tools}</p>
+      </div>
     </div>
-  </div>`
+  </a>`
   )
 }
 

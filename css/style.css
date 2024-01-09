@@ -56,19 +56,20 @@ a {
   position: relative;
   margin-bottom: 3rem;
   text-transform: uppercase;
-  color: rgb(140, 140, 140);
   font: 500 0.65rem "Mulish", sans-serif;
   letter-spacing: 1px;
   -webkit-transition: all ease 0.3s;
   transition: all ease 0.3s;
 }
+#subtitle a {
+  color: rgb(140, 140, 140);
+}
 #subtitle::before, #subtitle::after {
   -webkit-transition: all ease 0.3s;
   transition: all ease 0.3s;
   color: #000;
-  opacity: 0;
 }
-#subtitle:hover {
+#subtitle:hover a {
   color: #000;
 }
 #subtitle:hover::before {

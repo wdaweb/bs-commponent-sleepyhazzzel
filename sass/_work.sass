@@ -7,18 +7,19 @@
   position: relative
   margin-bottom: 3rem
   text-transform: uppercase
-  color: rgb(140, 140, 140)
   font: 500 0.65rem 'Mulish', sans-serif
   letter-spacing: 1px
   transition: all ease 0.3s
+  a
+    color: rgb(140, 140, 140)
   &::before,
   &::after
     transition: all ease 0.3s
     color: #000
-    opacity: 0
 
   &:hover
-    color: #000
+    a
+      color: #000
     &::before
       content: '['
       transform: translateX(-20px)
