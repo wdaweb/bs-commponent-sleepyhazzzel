@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&family=Hind:wght@300;400;500;600;700&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&family=Hind:wght@300;400;500;600;700&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
 *, *::before, *::after {
   margin: 0;
   padding: 0;
@@ -25,12 +25,24 @@ a {
   padding: 6rem 0;
 }
 
-.title {
+.small-title {
   margin-bottom: 3rem;
-  text-align: center;
   text-transform: uppercase;
   letter-spacing: 3px;
-  font: 300 20px "Hind Siliguri", sans-serif;
+  font: 300 20px "Hind", sans-serif;
+  color: #303030;
+}
+@media (min-width: 992px) {
+  .small-title {
+    font-size: 22px;
+  }
+}
+
+.title {
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font: 300 20px "Hind", sans-serif;
   color: #303030;
 }
 @media (min-width: 768px) {
@@ -43,6 +55,98 @@ a {
   .title {
     font-size: 32px;
   }
+}
+
+#achievement .black {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+#achievement .small-title {
+  color: #fff;
+}
+#achievement .icon {
+  margin: 0.25rem;
+}
+#achievement i {
+  font-size: 60px;
+  color: rgb(184, 184, 184);
+}
+#achievement .counter {
+  padding: 5px;
+  font: 500 35px "Mulish", sans-serif;
+  color: #fff;
+}
+@media (min-width: 992px) {
+  #achievement .counter {
+    font-size: 40px;
+  }
+}
+#achievement .text {
+  font: 300 11px "Hind", sans-serif;
+  letter-spacing: 1px;
+  color: #999;
+}
+
+#service .icon {
+  margin: 22px;
+  font-size: 2rem;
+  color: rgb(51, 51, 51);
+}
+#service .box-title {
+  font: 700 12px "Raleway", sans-serif;
+  letter-spacing: 2px;
+  color: rgb(89, 89, 89);
+}
+#service .box-content {
+  width: 80%;
+  margin: auto;
+  font: 200 13px "Mulish", sans-serif;
+  color: rgb(89, 89, 89);
+}
+@media (min-width: 768px) {
+  #service .small-title {
+    font-size: 24px;
+  }
+}
+
+#purchase {
+  background: rgb(16, 16, 16);
+}
+#purchase h5, #purchase .btn {
+  color: #b8b8b8;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+#purchase h5 {
+  font: 400 14px "Hind", sans-serif;
+}
+@media (min-width: 992px) {
+  #purchase h5 {
+    font-size: 15px;
+    letter-spacing: 6px;
+  }
+}
+#purchase .btn {
+  font: 500 11px "Mulish", sans-serif;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+#purchase .btn:hover {
+  color: #000;
+}
+@media (min-width: 992px) {
+  #purchase .btn {
+    font-size: 12px;
+    letter-spacing: 2px;
+  }
+}
+#purchase .btn-outline-light {
+  border: 2px solid #b8b8b8;
+  border-radius: 3px;
+}
+#purchase .btn-outline-light:hover {
+  border-color: #000;
 }
 
 #work {
@@ -64,25 +168,25 @@ a {
 #subtitle a {
   color: rgb(140, 140, 140);
 }
-#subtitle::before, #subtitle::after {
+#subtitle a::before, #subtitle a::after {
   -webkit-transition: all ease 0.3s;
   transition: all ease 0.3s;
   color: #000;
 }
-#subtitle:hover a {
+#subtitle a:hover {
   color: #000;
 }
-#subtitle:hover::before {
+#subtitle a:hover::before {
   content: "[";
   -webkit-transform: translateX(-20px);
           transform: translateX(-20px);
 }
-#subtitle:hover::after {
+#subtitle a:hover::after {
   content: "]";
   -webkit-transform: translateX(15px);
           transform: translateX(15px);
 }
-#subtitle:hover::before, #subtitle:hover::after {
+#subtitle a:hover::before, #subtitle a:hover::after {
   display: inline;
   position: absolute;
   top: -1px;
@@ -210,10 +314,16 @@ a {
   display: inline;
   margin: 0 5px;
 }
-#footer i {
-  color: var(--bs-gray-900);
-}
 #footer p {
   color: var(--bs-gray-600);
   font: 200 0.75rem "Mulish", sans-serif;
+}
+
+#social-icon i {
+  color: #333;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+#social-icon i:hover {
+  color: #d8d8d8;
 }

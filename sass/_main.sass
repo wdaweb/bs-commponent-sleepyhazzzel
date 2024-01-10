@@ -18,12 +18,20 @@ a
 .pad
   padding: 6rem 0
 
-.title
+.small-title
   margin-bottom: 3rem
-  text-align: center
   text-transform: uppercase
   letter-spacing: 3px
-  font: 300 20px 'Hind Siliguri', sans-serif
+  font: 300 20px 'Hind', sans-serif
+  color: #303030
+  @include lg
+    font-size: 22px
+
+.title
+  margin-bottom: 3rem
+  text-transform: uppercase
+  letter-spacing: 3px
+  font: 300 20px 'Hind', sans-serif
   color: #303030
   @include md
     font-size: 26px

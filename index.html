@@ -5,13 +5,96 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <!-- bootstrap -->
   <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <!-- linearicons -->
   <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+  <!-- fontawsome -->
   <script src="https://kit.fontawesome.com/9bd2123f7e.js" crossorigin="anonymous"></script>
+  <!-- Jarallax CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/jarallax@2/dist/jarallax.min.css" rel="stylesheet">
+  <!-- my CSS -->
   <link rel="stylesheet" href="./dist/style.min.css">
 </head>
 
 <body>
+  <div class="pad container text-center">
+    <h3 class="small-title">Agency Acievement</h3>
+  </div>
+
+  <div id="achievement" class="jarallax text-center">
+    <img class="jarallax-img" src="./img/backgroung.jpg">
+    <div class="black">
+      <div class="pad container">
+        <h3 class="small-title">Agency Acievement</h3>
+        <div class="row row-cols-1 row-cols-md-4 gy-5">
+          <div class="col">
+            <div class="icon"><i class="lnr lnr-history"></i></div>
+            <div class="counter" id="hour">0</div>
+            <div class="text">HOURS OF WORK</div>
+          </div>
+          <div class="col">
+            <div class="icon"><i class="lnr lnr-rocket"></i></div>
+            <div class="counter" id="finish">0</div>
+            <div class="text">FINISHED WORKS</div>
+          </div>
+          <div class="col">
+            <div class="icon"><i class="lnr lnr-users"></i></div>
+            <div class="counter" id="client">0</div>
+            <div class="text">CLIENTS</div>
+          </div>
+          <div class="col">
+            <div class="icon"><i class="lnr lnr-chart-bars"></i></div>
+            <div class="counter" id="follower">0</div>
+            <div class="text">SOCIAL FOLLOWERS</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="service" class="pad container text-center px-5">
+    <h3 class="small-title">Our services</h3>
+    <div class="row row-cols-1 row-cols-md-3 gy-5">
+      <div class="col">
+        <div class="icon"><i class="lnr lnr-diamond"></i></div>
+        <p class="box-title">UNIQUE DESIGN</p>
+        <p class="box-content">Donec sollicitudin molestie malesuada. Lorem ipsum dolor sit amet consect.</p>
+      </div>
+      <div class="col">
+        <div class="icon"><i class="lnr lnr-thumbs-up"></i></div>
+        <p class="box-title">EASY TO WORK</p>
+        <p class="box-content">Donec sollicitudin molestie malesuada. Lorem ipsum dolor sit amet consect.</p>
+      </div>
+      <div class="col">
+        <div class="icon"><i class="lnr lnr-film-play"></i></div>
+        <p class="box-title">UNLIMITED PORTFOLIOS</p>
+        <p class="box-content">Donec sollicitudin molestie malesuada. Lorem ipsum dolor sit amet consect.</p>
+      </div>
+      <div class="col">
+        <div class="icon"><i class="lnr lnr-heart"></i></div>
+        <p class="box-title">PREMIUM RESOURCES</p>
+        <p class="box-content">Donec sollicitudin molestie malesuada. Lorem ipsum dolor sit amet consect.</p>
+      </div>
+      <div class="col">
+        <div class="icon"><i class="lnr lnr-cart"></i></div>
+        <p class="box-title">WOOCOMMERCE READY</p>
+        <p class="box-content">Donec sollicitudin molestie malesuada. Lorem ipsum dolor sit amet consect.</p>
+      </div>
+      <div class="col">
+        <div class="icon"><i class="lnr lnr-star"></i></div>
+        <p class="box-title">FREE SUPPORT</p>
+        <p class="box-content">Donec sollicitudin molestie malesuada. Lorem ipsum dolor sit amet consect.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <div id="purchase" class="container-fluid text-center py-5">
+    <h5>Interest on our service?</h5>
+    <button type="button" class="btn btn-outline-light btn-sm mt-2 px-3 py-2">Purchase Hazel</button>
+  </div>
+
   <div id="work" class="pad container-fluid text-center">
     <h2 class="title">Our latest work</h2>
     <div id="subtitle">
@@ -157,6 +240,10 @@
 
   <script src="./js/bootstrap.bundle.min.js"></script>
   <script src="./js/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12/dist/ScrollTrigger.min.js"></script>
+  <script src="./js/counter.js"></script>
+  <script type="module" src="./js/jarallax.js"></script>
   <script src="./js/script.js"></script>
 </body>
 

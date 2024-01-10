@@ -12,26 +12,24 @@
   transition: all ease 0.3s
   a
     color: rgb(140, 140, 140)
-  &::before,
-  &::after
-    transition: all ease 0.3s
-    color: #000
-
-  &:hover
-    a
-      color: #000
-    &::before
-      content: '['
-      transform: translateX(-20px)
-    &::after
-      content: ']'
-      transform: translateX(15px)
     &::before,
     &::after
-      display: inline
-      position: absolute
-      top: -1px
-      opacity: 1
+      transition: all ease 0.3s
+      color: #000
+    &:hover
+      color: #000
+      &::before
+        content: '['
+        transform: translateX(-20px)
+      &::after
+        content: ']'
+        transform: translateX(15px)
+      &::before,
+      &::after
+        display: inline
+        position: absolute
+        top: -1px
+        opacity: 1
 
 #work-img
   .col
