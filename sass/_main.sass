@@ -6,6 +6,9 @@
 :root
   --bs-gray-background: rgba(245, 245, 245, 1)
 
+body
+  overflow-x: hidden
+
 ul
   list-style: none
   margin: 0
@@ -26,6 +29,24 @@ a
   color: #303030
   @include lg
     font-size: 22px
+
+.icon
+  margin: 22px
+  font-size: 2rem
+  color: rgb(51, 51, 51)
+
+.box-title
+  font: 700 10px 'Raleway', sans-serif
+  letter-spacing: 2px
+  color: rgb(89, 89, 89)
+.box-content
+  width: 80%
+  font: 300 11px 'Mulish', sans-serif
+  color: #595959
+  line-height: 1.7em
+  margin: auto
+  @include md
+    font-size: 12px
 
 .title
   margin-bottom: 3rem

@@ -11,15 +11,128 @@
   <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
   <!-- fontawsome -->
   <script src="https://kit.fontawesome.com/9bd2123f7e.js" crossorigin="anonymous"></script>
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <!-- Jarallax CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/jarallax@2/dist/jarallax.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jarallax@2/dist/jarallax.min.css">
   <!-- my CSS -->
   <link rel="stylesheet" href="./dist/style.min.css">
 </head>
 
 <body>
-  <div class="pad container text-center">
-    <h3 class="small-title">Agency Acievement</h3>
+  <div id="slide" class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide m-auto text-center">
+        <img src="./img/slide1.jpg">
+      </div>
+      <div class="swiper-slide m-auto text-center">
+        <img src="./img/slide2.jpg">
+      </div>
+    </div>
+    <!-- pagination -->
+    <div class="swiper-pagination"></div>
+    <!-- navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+
+  <div id="feature" class="pad container text-center">
+    <div class="row row-cols-1 row-cols-md-3 gy-5">
+      <div class="col">
+        <div class="icon"><i class="lnr lnr-text-format"></i></div>
+        <p class="box-title">CLEAN DESIGN</p>
+        <p class="box-content">
+          Professionally repurpose premium rather than magnetic bandwidth.
+        </p>
+      </div>
+      <div class="col">
+        <div class="icon"><i class="lnr lnr-gift"></i></div>
+        <p class="box-title">PREMIUM RESOURCES</p>
+        <p class="box-content">
+          Professionally repurpose premium rather than magnetic bandwidth.
+        </p>
+      </div>
+      <div class="col">
+        <div class="icon"><i class="lnr lnr-laptop-phone"></i></div>
+        <p class="box-title">RESPONSIVE LAYOUT</p>
+        <p class="box-content">
+          Professionally repurpose premium rather than magnetic bandwidth.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div id="rwd" class="container-fluid">
+    <div class="row row-cols-1 row-cols-lg-2 gy-5">
+      <div class="col">
+        <h3 class="small-title">We work hard</h3>
+        <p class="box-content">
+          Intrinsicly engineer one-to-one partnerships with error-free customer service. Competently optimize
+          goal-oriented technology via low-risk high-yield materials engage.
+        </p>
+        <p class="box-content">
+          Energistically develop client-centered web services without focused data. Conveniently syndicate leveraged
+          scenarios.
+        </p>
+        <button type="button" class="btn btn-outline-dark btn-sm mt-4 px-3 py-2">Outstanding features</button>
+      </div>
+      <div class="col"><img src="./img/mockup2.png"></div>
+    </div>
+  </div>
+
+  <div id="about" class="pad container px-5">
+    <h1>“ What separates design from art is that design is meant to be... functional ”</h1>
+    <p class="box-content mt-4">– Cameron Moll</p>
+    <div class="row row-cols-1 row-cols-md-3 gy-5 mt-5">
+      <div class="col">
+        <h6>OUR VALUES</h6>
+        <p class="box-content">
+          Uniquely create competitive e-markets for backward-compatible technologies. Authoritatively morph efficient
+          networks via bleeding-edge results. Completely drive 24/365 e-markets via quality e-business. Progressively
+          plagiarize enterprise strategic theme areas with ubiquitous sources. Enthusiastically drive team driven
+          processes rather than e-tailers.
+        </p>
+      </div>
+      <div class="col">
+        <h6>OUR MISSION</h6>
+        <p class="box-content">
+          Conveniently maximize standardized web-readiness without integrated products. Competently productivate fully
+          researched results via empowered e-commerce. Quickly repurpose cross-unit methodologies for leading-edge
+          materials. Monotonectally enhance team driven human capital whereas worldwide.
+        </p>
+      </div>
+      <div class="col">
+        <h6>OUR SKILLS</h6>
+        <div id="skill">
+          <div class="bar-group">
+            <span class="bar-name">DEVELOPMENT</span>
+            <div class="bar">
+              <div class="bar-line"><span class="percent">95%</span></div>
+            </div>
+          </div>
+          <div class="bar-group">
+            <span class="bar-name">DESIGN</span>
+            <div class="bar">
+              <div class="bar-line"><span class="percent">85%</span></div>
+            </div>
+          </div>
+          <div class="bar-group">
+            <span class="bar-name">MARKETING</span>
+            <div class="bar">
+              <div class="bar-line"><span class="percent">70%</span></div>
+            </div>
+          </div>
+          <div class="bar-group">
+            <span class="bar-name">CONSULTING</span>
+            <div class="bar">
+              <div class="bar-line"><span class="percent">65%</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
   <div id="achievement" class="jarallax text-center">
@@ -59,32 +172,44 @@
       <div class="col">
         <div class="icon"><i class="lnr lnr-diamond"></i></div>
         <p class="box-title">UNIQUE DESIGN</p>
-        <p class="box-content">Donec sollicitudin molestie malesuada. Lorem ipsum dolor sit amet consect.</p>
+        <p class="box-content">
+          Donec sollicitudin molestie malesuada. Lorem ipsum dolor sit amet consect.
+        </p>
       </div>
       <div class="col">
         <div class="icon"><i class="lnr lnr-thumbs-up"></i></div>
         <p class="box-title">EASY TO WORK</p>
-        <p class="box-content">Donec sollicitudin molestie malesuada. Lorem ipsum dolor sit amet consect.</p>
+        <p class="box-content">
+          Donec sollicitudin molestie malesuada. Lorem ipsum dolor sit amet consect.
+        </p>
       </div>
       <div class="col">
         <div class="icon"><i class="lnr lnr-film-play"></i></div>
         <p class="box-title">UNLIMITED PORTFOLIOS</p>
-        <p class="box-content">Donec sollicitudin molestie malesuada. Lorem ipsum dolor sit amet consect.</p>
+        <p class="box-content">
+          Donec sollicitudin molestie malesuada. Lorem ipsum dolor sit amet consect.
+        </p>
       </div>
       <div class="col">
         <div class="icon"><i class="lnr lnr-heart"></i></div>
         <p class="box-title">PREMIUM RESOURCES</p>
-        <p class="box-content">Donec sollicitudin molestie malesuada. Lorem ipsum dolor sit amet consect.</p>
+        <p class="box-content">
+          Donec sollicitudin molestie malesuada. Lorem ipsum dolor sit amet consect.
+        </p>
       </div>
       <div class="col">
         <div class="icon"><i class="lnr lnr-cart"></i></div>
         <p class="box-title">WOOCOMMERCE READY</p>
-        <p class="box-content">Donec sollicitudin molestie malesuada. Lorem ipsum dolor sit amet consect.</p>
+        <p class="box-content">
+          Donec sollicitudin molestie malesuada. Lorem ipsum dolor sit amet consect.
+        </p>
       </div>
       <div class="col">
         <div class="icon"><i class="lnr lnr-star"></i></div>
         <p class="box-title">FREE SUPPORT</p>
-        <p class="box-content">Donec sollicitudin molestie malesuada. Lorem ipsum dolor sit amet consect.</p>
+        <p class="box-content">
+          Donec sollicitudin molestie malesuada. Lorem ipsum dolor sit amet consect.
+        </p>
       </div>
     </div>
 
@@ -237,13 +362,16 @@
     </div>
   </div>
 
-
+  <!-- import -->
   <script src="./js/bootstrap.bundle.min.js"></script>
   <script src="./js/jquery-3.7.1.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12/dist/gsap.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12/dist/ScrollTrigger.min.js"></script>
+  <script src="./js/gsap.js"></script>
+  <script src="./js/ScrollTrigger.js"></script>
+  <!-- myScript -->
+  <script src="./js/swiper.js" type="module"></script>
+  <script src="./js/skill.js"></script>
   <script src="./js/counter.js"></script>
-  <script type="module" src="./js/jarallax.js"></script>
+  <script src="./js/jarallax.js" type="module"></script>
   <script src="./js/script.js"></script>
 </body>
 
