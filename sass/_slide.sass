@@ -1,6 +1,3 @@
-#slide
-  overflow: visible !important
-
 :root
   --swiper-navigation-size: 15px
   --swiper-navigation-sides-offset: 2.2rem
@@ -13,11 +10,55 @@
 .swiper
   width: 100%
   height: 100vh
-  img
-    min-width: 100%
+  position: relative
+  overflow: hidden
+  .img-wrapper
+    width: 100%
     height: 100%
-    object-fit: cover
-    object-position: center
+    overflow: hidden
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+      object-position: center
+
+#slide
+  .content
+    position: absolute
+    top: 48%
+    left: 50%
+    transform: translate(-50%, -50%)
+    z-index: 1
+    h6
+      font: 1rem 'Julius Sans One', sans-serif
+      text-transform: uppercase
+      line-height: 2
+      letter-spacing: 8px
+      color: rgba(68,68, 68, 0.9)
+    h3
+      font: 600 2rem 'Josefin Sans', sans-serif
+      text-transform: uppercase
+      white-space: nowrap
+      line-height: 2
+      letter-spacing: 20px
+      color: rgba(16, 16, 16, 0.9)
+    button
+      border: 2px solid
+      border-radius: 0
+      font: 700 10px 'Mulish', sans-serif
+      letter-spacing: 5px
+      text-transform: uppercase
+      &:hover
+        border: 2px solid #000
+    span
+      font: italic 300 0.85rem 'Georgia', serif
+      color: #666
+
+// $imgs: (odd: slide1, even: slide2)
+// @each $num, $img in $imgs
+//   .swiper-slide:nth-child(#{$num})
+//     background-image: url('../img/#{$img}.jpg')
+//     background-size: 100% auto
 
 // $margins: 'left', 'right'
 // @for $i from 1 through length($margins)

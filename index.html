@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- https://demo.templatemonster.com/demo/67167.html -->
 
 <head>
   <meta charset="UTF-8">
@@ -24,11 +25,33 @@
     <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
       <!-- Slides -->
-      <div class="swiper-slide m-auto text-center">
-        <img src="./img/slide1.jpg">
+      <div id="left" class="swiper-slide m-auto text-center">
+        <div class="img-wrapper">
+          <img src="./img/slide1.jpg">
+        </div>
+        <div class="content">
+          <h6>A minimalist wordpress theme</h6>
+          <h3 class="mt-3 mb-4">Welcome to Hazel</h3>
+          <div class="group mt-4">
+            <button type="button" class="btn btn-outline-dark btn-sm px-4 py-2">About Us</button>
+            <span class="mx-4">or</span>
+            <button type="button" class="btn btn-outline-dark btn-sm px-4 py-2">Contact</button>
+          </div>
+        </div>
       </div>
-      <div class="swiper-slide m-auto text-center">
-        <img src="./img/slide2.jpg">
+      <div id="right" class="swiper-slide m-auto text-center">
+        <div class="img-wrapper">
+          <img src="./img/slide2.jpg">
+        </div>
+        <div class="content">
+          <h6>Made with love by treethemes</h6>
+          <h3>Clean powerful theme</h3>
+          <div class="group mt-5">
+            <button type="button" class="btn btn-outline-dark btn-sm px-4 py-2">About Us</button>
+            <span class="mx-4">or</span>
+            <button type="button" class="btn btn-outline-dark btn-sm px-4 py-2">Contact</button>
+          </div>
+        </div>
       </div>
     </div>
     <!-- pagination -->
@@ -363,10 +386,10 @@
   </div>
 
   <!-- import -->
-  <script src="./js/bootstrap.bundle.min.js"></script>
-  <script src="./js/jquery-3.7.1.min.js"></script>
-  <script src="./js/gsap.js"></script>
-  <script src="./js/ScrollTrigger.js"></script>
+  <script src="./package/bootstrap.bundle.min.js"></script>
+  <script src="./package/jquery-3.7.1.min.js"></script>
+  <script src="./package/gsap.js"></script>
+  <script src="./package/ScrollTrigger.js"></script>
   <!-- myScript -->
   <script src="./js/swiper.js" type="module"></script>
   <script src="./js/skill.js"></script>
