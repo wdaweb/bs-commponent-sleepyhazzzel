@@ -224,6 +224,7 @@ a {
 }
 .navbar .btn-box i {
   margin: 20px 10px;
+  cursor: pointer;
 }
 .navbar .btn-box i .mybadge {
   width: 16px;
@@ -322,6 +323,7 @@ a {
   height: 25px;
   background-color: #717171;
   border-radius: 50%;
+  cursor: pointer;
 }
 #icons .circle i {
   position: absolute;
@@ -617,7 +619,7 @@ a {
   border-radius: 3px;
 }
 #purchase .btn-outline-light:hover {
-  border-color: #000;
+  border-color: #fff;
 }
 
 #work {
