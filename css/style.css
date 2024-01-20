@@ -86,6 +86,274 @@ a {
   }
 }
 
+/*!
+ * * Hamburgers
+ * * @description Tasty CSS-animated hamburgers
+ * * @author Jonathan Suh @jonsuh
+ * * @site https://jonsuh.com/hamburgers
+ * * @link https://github.com/jonsuh/hamburgers
+ * */
+.hamburger {
+  padding: 15px 15px;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-transition-property: opacity, -webkit-filter;
+  transition-property: opacity, -webkit-filter;
+  transition-property: opacity, filter;
+  transition-property: opacity, filter, -webkit-filter;
+  -webkit-transition-duration: 0.15s;
+          transition-duration: 0.15s;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+  font: inherit;
+  color: inherit;
+  text-transform: none;
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  overflow: visible;
+}
+.hamburger:hover {
+  opacity: 1;
+}
+.hamburger.is-active:hover {
+  opacity: 1;
+}
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner::before,
+.hamburger.is-active .hamburger-inner::after {
+  background-color: #000;
+}
+
+.hamburger-box {
+  width: 20px;
+  height: 14px;
+  display: inline-block;
+  position: relative;
+}
+
+.hamburger-inner {
+  display: block;
+  top: 50%;
+  margin-top: -1.4px;
+}
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+  width: 20px;
+  height: 2.8px;
+  background-color: #000;
+  border-radius: 0;
+  position: absolute;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 0.6s;
+          transition-duration: 0.6s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+}
+.hamburger-inner::before, .hamburger-inner::after {
+  content: "";
+  display: block;
+}
+.hamburger-inner::before {
+  top: -5.6px;
+}
+.hamburger-inner::after {
+  bottom: -5.6px;
+}
+
+/*
+ * Slider Reverse
+ */
+.hamburger--slider-r .hamburger-inner {
+  top: 1.4px;
+}
+.hamburger--slider-r .hamburger-inner::before {
+  top: 5.6px;
+  -webkit-transition-property: opacity, -webkit-transform;
+  transition-property: opacity, -webkit-transform;
+  transition-property: transform, opacity;
+  transition-property: transform, opacity, -webkit-transform;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+  -webkit-transition-duration: 0.15s;
+          transition-duration: 0.15s;
+}
+.hamburger--slider-r .hamburger-inner::after {
+  top: 11.2px;
+}
+.hamburger--slider-r.is-active .hamburger-inner {
+  -webkit-transform: translate3d(0, 5.6px, 0) rotate(-45deg);
+          transform: translate3d(0, 5.6px, 0) rotate(-45deg);
+}
+.hamburger--slider-r.is-active .hamburger-inner::before {
+  -webkit-transform: rotate(45deg) translate3d(2.8571428571px, -2.8px, 0);
+          transform: rotate(45deg) translate3d(2.8571428571px, -2.8px, 0);
+  opacity: 0;
+}
+.hamburger--slider-r.is-active .hamburger-inner::after {
+  -webkit-transform: translate3d(0, -11.2px, 0) rotate(90deg);
+          transform: translate3d(0, -11.2px, 0) rotate(90deg);
+}
+
+#hbg-white .hamburger-inner, #hbg-white .hamburger-inner::before, #hbg-white .hamburger-inner::after {
+  background-color: #fff;
+}
+
+.navbar .text-bg-transparent {
+  color: #000;
+  background-color: transparent;
+}
+.navbar .navbar-brand {
+  padding-left: 20px;
+}
+.navbar .navbar-brand img {
+  height: 16px;
+}
+.navbar .btn-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.navbar .btn-box i {
+  margin: 20px 10px;
+}
+.navbar .btn-box i .mybadge {
+  width: 16px;
+  height: 16px;
+  margin: 0 !important;
+  padding: 0 !important;
+  border-radius: 50%;
+  font: 11px "Hind", sans-serif;
+}
+.navbar .btn-box i:first-child {
+  font-size: 14px;
+  padding-top: 2px;
+}
+.navbar #navbarNavDropdown {
+  background: #fff;
+}
+@media (min-width: 992px) {
+  .navbar #navbarNavDropdown {
+    background: transparent;
+  }
+}
+.navbar #navbarNavDropdown a {
+  padding: 16px;
+  font: 300 11px "Hind", sans-serif;
+  letter-spacing: 0;
+  text-transform: capitalize;
+  border-bottom: 1px solid #999;
+}
+@media (min-width: 992px) {
+  .navbar #navbarNavDropdown a {
+    font: 400 10px "Hind", sans-serif;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    border-color: transparent;
+  }
+}
+.navbar #navbarNavDropdown a:last-child {
+  border: none;
+}
+
+#navbar2 {
+  background-color: #000;
+}
+#navbar2 .btn-box i {
+  color: rgb(255, 255, 255);
+}
+
+.offcanvas .offcanvas-header .img-container {
+  margin-top: 35px;
+  margin-bottom: 10px;
+  width: 150px;
+}
+.offcanvas .offcanvas-header .img-container img {
+  width: 100%;
+}
+.offcanvas .offcanvas-header .btn-close {
+  margin: -75px -15px 0 0;
+  background: none;
+}
+.offcanvas .offcanvas-header .btn-close span {
+  font-size: 17px;
+}
+.offcanvas .offcanvas-header .btn-close:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.offcanvas .offcanvas-body p {
+  font: 200 12px "Mulish", sans-serif;
+  line-height: 1.6em;
+  letter-spacing: 0.4px;
+  color: #ededed;
+}
+.offcanvas .offcanvas-body h4 {
+  font: 500 14px "Hind", sans-serif;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+.offcanvas .offcanvas-body button {
+  border-radius: 0;
+  border: 2px solid #e5e5e5;
+  font: 500 10px "Mulish", sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.offcanvas .offcanvas-body button:hover {
+  border-color: #fff;
+}
+
+.text-bg-dark {
+  background-color: #151515 !important;
+}
+
+#icons .circle {
+  position: relative;
+  width: 25px;
+  height: 25px;
+  background-color: #717171;
+  border-radius: 50%;
+}
+#icons .circle i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 12px;
+  color: #212121;
+}
+#icons .circle + .circle {
+  margin-left: 10px;
+}
+
+#info div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+#info div i {
+  padding: 9px 10px 0 0;
+  font-size: 14px;
+  color: #b8b8b8;
+}
+#info div p {
+  margin: 5px;
+}
+
+.offcanvas-end {
+  width: 350px !important;
+}
+
 :root {
   --swiper-navigation-size: 15px;
   --swiper-navigation-sides-offset: 2.2rem;
@@ -118,40 +386,68 @@ a {
 
 #slide .content {
   position: absolute;
-  top: 48%;
+  top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   z-index: 1;
 }
 #slide .content h6 {
-  font: 1rem "Julius Sans One", sans-serif;
+  margin: 0;
+  font: 0.6rem "Julius Sans One", sans-serif;
   text-transform: uppercase;
   line-height: 2;
-  letter-spacing: 8px;
+  letter-spacing: 3px;
   color: rgba(68, 68, 68, 0.9);
 }
+@media (min-width: 768px) {
+  #slide .content h6 {
+    font-size: 0.8rem;
+    letter-spacing: 5.5px;
+  }
+}
+@media (min-width: 992px) {
+  #slide .content h6 {
+    font-size: 1rem;
+    letter-spacing: 8px;
+  }
+}
 #slide .content h3 {
-  font: 600 2rem "Josefin Sans", sans-serif;
+  font: 500 2.2vw "Josefin Sans", sans-serif;
   text-transform: uppercase;
   white-space: nowrap;
   line-height: 2;
-  letter-spacing: 20px;
+  letter-spacing: 1.6vw;
   color: rgba(16, 16, 16, 0.9);
 }
 #slide .content button {
-  border: 2px solid;
+  border: 1px solid;
   border-radius: 0;
-  font: 700 10px "Mulish", sans-serif;
-  letter-spacing: 5px;
+  font: 700 8px "Mulish", sans-serif;
+  letter-spacing: 2px;
   text-transform: uppercase;
 }
 #slide .content button:hover {
-  border: 2px solid #000;
+  border: 1px solid #000;
+}
+@media (min-width: 992px) {
+  #slide .content button {
+    border: 2px solid;
+    font-size: 10px;
+    letter-spacing: 5px;
+  }
+  #slide .content button:hover {
+    border: 2px;
+  }
 }
 #slide .content span {
-  font: italic 300 0.85rem "Georgia", serif;
+  font: italic 300 0.65rem "Georgia", serif;
   color: #666;
+}
+@media (min-width: 992px) {
+  #slide .content span {
+    font-size: 0.85rem;
+  }
 }
 
 .swiper-pagination-bullet {
