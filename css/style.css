@@ -271,6 +271,9 @@ a {
 #navbar2 .btn-box i {
   color: rgb(255, 255, 255);
 }
+#navbar2 #navbarNavDropdown a {
+  color: #000;
+}
 
 .offcanvas .offcanvas-header .img-container {
   margin-top: 35px;

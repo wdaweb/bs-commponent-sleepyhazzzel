@@ -1,4 +1,4 @@
-$('#navbar button').on('click', function () {
+$('.navbar button').on('click', function () {
   if ($(this).hasClass('is-active')) {
     $(this).removeClass('is-active')
   } else {
